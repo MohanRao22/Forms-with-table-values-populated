@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with Table Population</title>
+</head>
+<!-- Latest compiled and minified CSS -->
+<!-- <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" /> -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css" />
+
+
+<body>
+    <!-- Header of the page -->
+    <header>
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col-lg-8 col-xl-8 col-md-6 col-sm-6 col-6 head">
+                    <div class="text-left">Form Data Viewer</div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-6 col-sm-6 col-6 head">
+                    <div class="text-right timer"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- end of header page -->
+
+    <!-- main content -->
+    <div class="container-fluid main-page">
+        <!-- form data -->
+        <div class="row main-row">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 col-12  form-data w-100">
+                <section class="">
+                    <div class="headingg text-center">
+                        <h1 id="title"> ADD DATA </h1>
+                    </div>
+                    <form class="form-group-head" id="form">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" class="form-control" placeholder="Enter First Name" autocomplete="off" required />
+                            <p class="err-first"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="last-name" class="form-control" placeholder="Enter Last Name" autocomplete="off" required />
+                            <p class="err-last"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea type="text" id="address" class="form-control" cols="2" rows="4" placeholder="Enter Address" autocomplete="off"></textarea>
+                            <p class="err-address"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode" class="form-control" placeholder="Enter Pincode" autocomplete="off" required />
+                            <p class="err-pincode"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <div class="gender-divi">
+                                <div>
+                                    <input type="radio" id="gender" value="Male" class="gender" name="gender" required />
+                                    <label for="gender">Male</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="gender1" value="Female" class="gender1" name="gender" required />
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="choice">Choice Of Food</label>
+                            <select class="form-control" id="choice1">
+                                    <option value="choose" disabled>-- Choose Any 3 --</option>
+                                    <option value="Biriyani">Biriyani</option>
+                                    <option value="Fried Rice">Fried Rice</option>
+                                    <option value="Dosa">Dosa</option>
+                                    <option value="Burger">Burger</option>
+                                    <option value="Pizza">Pizza</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="State">State</label>
+                            <select id="state" class="form-control">
+                                    <option value="choose" disabled>-- Choose State --</option>
+                                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                    <option value="Assam">Assam</option>
+                                    <option value="Bihar">Bihar</option>
+                                    <option value="Chandigarh">Chandigarh</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                    <option value="Daman and Diu">Daman and Diu</option>
+                                    <option value="Delhi">Delhi</option>
+                                    <option value="Lakshadweep">Lakshadweep</option>
+                                    <option value="Puducherry">Puducherry</option>
+                                    <option value="Goa">Goa</option>
+                                    <option value="Gujarat">Gujarat</option>
+                                    <option value="Haryana">Haryana</option>
+                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                    <option value="Jharkhand">Jharkhand</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                    <option value="Maharashtra">Maharashtra</option>
+                                    <option value="Manipur">Manipur</option>
+                                    <option value="Meghalaya">Meghalaya</option>
+                                    <option value="Mizoram">Mizoram</option>
+                                    <option value="Nagaland">Nagaland</option>
+                                    <option value="Odisha">Odisha</option>
+                                    <option value="Punjab">Punjab</option>
+                                    <option value="Rajasthan">Rajasthan</option>
+                                    <option value="Sikkim">Sikkim</option>
+                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                    <option value="Telangana">Telangana</option>
+                                    <option value="Tripura">Tripura</option>
+                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                    <option value="Uttarakhand">Uttarakhand</option>
+                                    <option value="West Bengal">West Bengal</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="State">Country</label>
+                            <select id="country" class="form-control">
+                                    <option value="choose" disabled>-- Choose Country --</option>
+                                    <option value="india">India</option>
+                                </select>
+                        </div>
+                        <div class="form-group mt-2 text-center">
+                            <button class="btn btn-primary mt-4" id="submit">Add Data</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+
+
+            <div class="col-lg-9 col-xl-9 col-md-6 col-sm-12 col-12 table-data">
+                <section class="sub-heading">
+                    <div class="table-header">
+                        <p id="description" class="text-center">Added Data</p>
+                    </div>
+                </section>
+                <!-- form data values sould be populated into table -->
+                <section class="table-populated">
+
+                    <table class="table table-dark table-responsive-sm">
+                        <thead>
+                            <th class="table-header">First Name</th>
+                            <th class="table-header">Last Name</th>
+                            <th class="table-header">Address</th>
+                            <th class="table-header">Pincode</th>
+                            <th class="table-header">Gender</th>
+                            <th class="table-header">Food</th>
+                            <th class="table-header">State</th>
+                            <th class="table-header">Country</th>
+                        </thead>
+                        <tbody id="form-data-collection">
+
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <p id="local"></p>
+                </section>
+            </div>
+        </div>
+        <!-- main row end -->
+    </div>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.choiceOfFood').select2();
+        });
+    </script>
+
+</body>
+
+</html>

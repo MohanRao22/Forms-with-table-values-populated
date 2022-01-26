@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.header {
+    /* background-color: rgb(0, 0, 0); */
+    background-color: #1d4019;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.head {
+    padding: 10px;
+}
+
+.head div {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+
+.form-group label {
+    display: block;
+    margin-top: 10px;
+}
+
+.form-group input {
+    width: 85%;
+    box-shadow: 3px 2px 7px black;
+}
+
+.form-group textarea {
+    width: 85%;
+    box-shadow: 3px 2px 7px black;
+}
+
+.form-group textarea:focus {
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.form-group input:focus {
+    box-shadow: 0px 0px 0px white;
+    border: 3px solid rgb(11, 44, 192)
+}
+
+.form-group select {
+    width: 85%;
+    box-shadow: 3px 2px 7px black;
+}
+
+.form-group select:focus {
+    box-shadow: 0px 0px 0px white;
+}
+
+.form-group input[type="radio"] {
+    width: auto;
+    font-size: 20px;
+    box-shadow: 0px 0px 0px red;
+}
+
+.form-data {
+    border-right: 1px solid rgb(0, 0, 0);
+    /* background-image: linear-gradient(to bottom, rgb(158, 145, 145), rgb(214, 156, 156), rgb(141, 96, 96)); */
+    /* background-color: black; */
+    background-color: #3a9f2e;
+}
+
+.gender-divi {
+    display: flex;
+}
+
+.gender-divi div {
+    margin-right: 10px;
+}
+
+th,
+td {
+    border: 1px solid rgb(255, 255, 255)!important;
+    padding: 5px;
+}
+
+.table-data {
+    padding: 0;
+}
+
+.form-group label {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.headingg {
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+}
+
+#submit {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: red;
+    border-radius: 50px;
+}
+
+.table-header h3 {
+    line-height: auto;
+    overflow: hidden;
+    margin: 15px 0px;
+}
+
+textarea {
+    resize: none;
+}
+
+#title {
+    overflow: hidden;
+    font-size: 23px;
+}
+
+#submit:focus {
+    box-shadow: 0px 0px 0px transparent;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#description {
+    font-size: 30px;
+    text-shadow: 3px 3px 2px lightgreen;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+input p {
+    margin-bottom: 0px;
+}
+
+input[type="text"]::placeholder {
+    color: rgb(250, 0, 175);
+}
+
+#address::placeholder {
+    color: rgb(250, 0, 175);
+}
+
+.timer {
+    font-size: 17px!important;
+}
+
+@media(min-width:280px) and (max-width:1200px) {}
